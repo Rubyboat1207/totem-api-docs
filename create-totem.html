@@ -36,7 +36,10 @@ public void onInitialize() {
     new TotemItem(new FabricItemSettings().group(ItemGroup.COMBAT), new Identifier("rubyboat", "cool_totem"), effects, 10, null);
 }
 </code>
-                        There are many effects, to see the full list of effects, you can go to <a href="effectsList.html">Totem Effect List</a>
+                        There are many effects, to see the full list of effects, you can go to <a href="totem-effect-list.html">Totem Effect List</a>
+                        to use a special effect just instanciate any class that extends <span class="line-code">DeezNuts</span> and use the correct constructor.
+                        An Example of a totem with a special effect is:<br>
+                        <code class="block-code">new TotemItem(new FabricItemSettings().group(ItemGroup.COMBAT), new Identifier("rubyboat", "cool_totem"), effects, 10, new ExplodeEffect(3));</code>
                     </p>
                 </div>
                 

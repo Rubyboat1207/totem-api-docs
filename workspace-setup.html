@@ -24,8 +24,8 @@ dependencies {
     modImplementation "com.github.Rubyboat1207:totem-api:${project.totem_api_version}"
 }</code>
                        put this in your <span class="line-file">gradle.properties</span> file:
-                       <code class="block-code orange">totem_api_version=xyz</code>
-                       replace <span class="line-code">xyz</span> with the version of totem api you would like to use. The latest version is <span class="line-file" id="totem-version"></span> (include the v)
+                       <code class="block-code orange">totem_api_version=<span id="totem-version"></span></code>
+                       This is the latest, but if you would like a different version of totem api, you can get the version <a href="https://github.com/Rubyboat1207/totem-api/releases/">here</a>
                        <br>Then finally put this inside your <span class="line-file">fabric.mod.json</span> file:
                         <code class="block-code green">"depends": {   
     "totem_api": "*"

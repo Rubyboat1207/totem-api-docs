@@ -1,6 +1,6 @@
 //add a listener to on dom loaded
-const content_names = ["Getting Started", "Workspace Setup", "Your First Totem", "Totem Effect List"]; 
-const content_urls = ["index.html", "workspace-setup.html", "create-totem.html", "totem-effect-list.html"];
+const content_names = ["Getting Started", "Workspace Setup", "Your First Totem", "Your First Effect" , "Totem Effect List"]; 
+const content_urls = ["index.html", "workspace-setup.html", "create-totem.html", "create-effect.html" ,"totem-effect-list.html"];
 
 
 window.addEventListener('DOMContentLoaded', function() {
@@ -15,8 +15,7 @@ window.addEventListener('DOMContentLoaded', function() {
         link.className = "contents";
         content.appendChild(link);
     }
-    //get all elements with the id of totem-version and set the inner html to the latest release version from the github repository https://github.com/Rubyboat1207/totem-api
-    document.getElementById('totem-version').innerHTML = "Totem API " + getLatestReleaseVersion();
+    document.getElementById('totem-version').innerHTML = getLatestReleaseVersion();
 });
 
 //return the latest release version from the github repository
