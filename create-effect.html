@@ -14,11 +14,19 @@
                         <h1>Your First Effect</h1>
                     </div>
                     <p>
-                        This guide will help you get started with the Totem API with fabric. To get started with the API,
-                        I assume you have some knowledge of the <a href="https://fabricmc.net">Fabric</a> modloader and have fabric API installed as well.
-                        <br>
-                        <br>
-                        this mod is intended for use with <span class="line-code">1.18.2</span> minecraft version.
+                        To create an effect, simply create a new class that extends the <span class="line-code">DeezNuts</span> class.
+                        <code class="block-code">public class MyEffect extends DeezNuts {
+
+}</code>
+                        There are 3 overridable methods that you can use to customize your effect.
+                        <span class="block-code">void OnDeath(LivingEntity user, World world, ItemStack stack)</span>
+                        <span class="block-code">ActionResult onClick(LivingEntity user, World world, BlockPos selectedBlock, ItemStack stack)</span>
+                        <span class="block-code">String getTooltip()</span>
+                        OnDeath is called when the user dies.<br>
+                        onClick is called when the user clicks on a block.<br>
+                        getTooltip is called whenever the player hovers over the item in their inventory. and it looks like this in game:<br>
+                        <img src="images/goat.png">
+                        <span class="block-code">public String getTooltip() {return "launches you with a force of " + velocity;}</span>
                     </p>
                 </div>
                 
