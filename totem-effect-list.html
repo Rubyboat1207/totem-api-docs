@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="scripting.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="tableofContents" id="contents">
+
+            </div>
+            <div class="MainContent">
+                <div style="padding-left: 20px;">
+                    <div class="Title">
+                        <h1>Totem Effect List</h1>
+                    </div>
+                    <h2>AOE Effect:</h2>
+                    <p>
+                        <code class="block-code">new AOEEffect(int radius, StatusEffectInstance aoeEffect)</code>
+                        <code class="block-code">new AOEEffect(int radius, new AOEEffect(int radius, ArrayList&#60;StatusEffectInstance&#x3e; aoeEffect) aoeEffect)</code>
+                        AOE Effect (Area of Effect) is a special effect that will apply a status effect to all entities within a certain radius.
+                    </p>
+                    <h2>Explode Effect:</h2>
+                    <p>
+                        <code class="block-code">new ExplodeEffect(int power)</code>
+                        Explode Effect is a special effect that will cause the totem to explode with the power specified, whilst not damaging the user.
+                    </p>
+                    <h2>Freeeze Effect:</h2>
+                    <p>
+                        <code class="block-code">new FreezeEffect(int freezeTicks)</code>
+                        Cause the user to have the poweder snow frozen effect for the specified amount of ticks.
+                    </p>
+                    <h2>GiveItem Effect:</h2>
+                    <p>
+                        <code class="block-code">new giveItem(ItemStack item)</code>
+                        Gives the Player the specified item.
+                    </p>
+                    <h2>Launch Effect:</h2>
+                    <p>
+                        <code class="block-code">new LaunchEffect(double velocity)</code>
+                        Launches the user vertically by the specified velocity.
+                    </p>
+                    <h2>Random Teleport Effect:</h2>
+                    <p>
+                        <code class="block-code">new RandomTeleport(float Radius)</code>
+                        Teleports the user to a random location within the specified radius.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

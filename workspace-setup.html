@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="scripting.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="tableofContents" id="contents">
+            </div>
+            <div class="MainContent">
+                <div style="padding-left: 20px;">
+                    <div class="Title">
+                        <h1>Workspace Setup</h1>
+                    </div>
+                    <p>
+                        Get your fabric environment setup correctly, if you dont know how to do this, please refer to the <a href="https://fabricmc.net/wiki/tutorial:setup">Fabric Getting Started Guide</a>
+                        <br>Assuming you are already setup, you can now proceed to getting totem API setup. 
+                        <br>To begin put this in your <span class="line-file">build.gradle</span> file:
+                        <br>
+                        <code class="block-code">repositories {
+    maven { url 'https://jitpack.io' }
+}
+dependencies {
+    modImplementation "com.github.Rubyboat1207:totem-api:${project.totem_api_version}"
+}</code>
+                       put this in your <span class="line-file">gradle.properties</span> file:
+                       <code class="block-code orange">totem_api_version=xyz</code>
+                       replace <span class="line-code">xyz</span> with the version of totem api you would like to use. The latest version is <span class="line-file" id="totem-version"></span> (include the v)
+                       <br>Then finally put this inside your <span class="line-file">fabric.mod.json</span> file:
+                        <code class="block-code green">"depends": {   
+    "totem_api": "*"
+}</code>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

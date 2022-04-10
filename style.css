@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
+h1{
+    font-family: 'Raleway', sans-serif;
+    color: #333335;
+    font-size: 35px;
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+    color: #333335;
+    font-size: 25px;
+}
+
+.tableofContents {
+    width: 15%;
+    height: 100%;
+
+    float: left;
+    background-color: #eeeeee;
+    /*right 2px green border*/
+    border-right: 8px solid #dddddd;
+    padding-top: 20px;
+    text-align: center;
+    /*make it stick to the side of the screen at all times*/
+    position: sticky;
+}
+.contents{
+    font-size: 20px;
+    font-family: 'RaleWay', sans-serif;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    padding: 3px 0 3px 0;
+    display: block;
+    border-bottom: 2px dashed #777787;
+}
+.MainContent {
+    height: 100%;
+    max-width: 82%;
+    float: left;
+}
+.Title{
+    padding-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: #333335;
+    font-size: 35px;
+    width: 550px;
+    line-height: 0px;
+    height: min-content;
+    /*bottom border*/
+    border-bottom: 4px solid #dddddd;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    color: #333335;
+    font-size: 18px;
+}
+.line-code{
+    background-color: #333335;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    padding: 1px 5px 1px 5px;
+    color: #C586A1;
+    /*rounded corners and border*/
+    border-radius: 5px;
+    border: 2px solid #151515;
+}
+.block-code {
+    background-color: #333335;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    margin: 10px 0px 10px 10px;
+    padding: 3px 10px 3px 10px;
+    color: #C586A1;
+    /*rounded corners and border*/
+    border-radius: 5px;
+    border: 2px solid #151515;
+    display: block;
+    width: fit-content;
+    /*dont collapse spaces*/
+    white-space: pre-wrap;
+}
+
+.orange{
+    color: #CC7832;
+}
+
+.green{
+    color: #6A8759;
+}
+
+.yellow{
+    color: #BBB529;
+}
+
+.gray{
+    color: #808080;
+}
+
+.line-file{
+    background-color: #e7e7e7;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    padding: 1px 5px 1px 5px;
+    color: #757575;
+    /*rounded corners and border*/
+    border-radius: 5px;
+}
+body{
+    margin: auto;
+}

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="scripting.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="tableofContents" id="contents">
+
+            </div>
+            <div class="MainContent">
+                <div style="padding-left: 20px;">
+                    <div class="Title">
+                        <h1>Your First Totem</h1>
+                    </div>
+                    <p>
+                        Congragulations on setting up totem api correctly! Lets get into the fun part...
+                        <br>To create your first totem you just need to instantiate the class. The constructor is as follows:
+                        <code class="block-code">new TotemItem(Settings settings, Identifier identifier, ArrayList&#60;StatusEffectInstance&#x3e;, int, <span class="yellow">@Nullable</span> DeezNuts effect, <span class="gray">(Experimental)</span> boolean canUseInVoid)</code>
+                        <br> 1. Settings for the item.
+                        <br> 2. Identifier for the item, as this will automatically register the item.
+                        <br> 3. List of status effects that the totem will give on death.
+                        <br> 4. Amount of health remaining the player will have once used.
+                        <br> 5. Any non status effect effects that will happen once used.
+                        <br> 6. Whether or not the item can be used in the void, leaving this out will result in the value being set to false.
+                        <br><br>An example of how to use this is as follows:
+                        <code class="block-code">ArrayList<StatusEffectInstance> effects = new ArrayList&#60;&#x3e;() {
+    {
+        add(new StatusEffectInstance(StatusEffects.ABSORPTION, 600, 1));
+        add(new StatusEffectInstance(StatusEffects.REGENERATION, 1200, 0));
+        add(new StatusEffectInstance(StatusEffects.RESISTANCE, 2400, 0));
+    }
+};
+@Override
+public void onInitialize() {
+    new TotemItem(new FabricItemSettings().group(ItemGroup.COMBAT), new Identifier("rubyboat", "cool_totem"), effects, 10, null);
+}
+</code>
+                        There are many effects, to see the full list of effects, you can go to <a href="effectsList.html">Totem Effect List</a>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
