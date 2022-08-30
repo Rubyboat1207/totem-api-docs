@@ -25,5 +25,8 @@ function getLatestReleaseVersion() {
     request.open('GET', url, false);
     request.send(null);
     const response = JSON.parse(request.responseText);
+    if(response == undefined) {
+        return "xyz";   
+    }
     return response.tag_name;
 }
